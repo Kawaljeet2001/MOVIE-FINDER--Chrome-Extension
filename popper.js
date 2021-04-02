@@ -31,7 +31,27 @@ async function getdatafromapi(moviename) {
   }
 }
 
-function createMovieElements(MovieData, Movie_Cast) {
+function pricetostring(mon) {
+  var money = 0;
+  if (mon >= 1000000000) {
+    money = mon / 1000000000;
+    money = money.toFixed(2);
+
+    return String(money) + " billion";
+  } else if (mon >= 1000000) {
+    money = mon / 1000000;
+    money = money.toFixed(0);
+
+    return String(money) + " million";
+  } else {
+    money = mon / 1000;
+    money = money.toFixed(0);
+
+    return String(money) + " thousand";
+  }
+}
+
+function createMovieElements(MovieData, Movie_Cast, Movie_Metadata) {
   //title
   var MovieNameElement = document.getElementById("MovieName");
   MovieNameElement.innerHTML = MovieData.original_title;
@@ -59,15 +79,19 @@ function createMovieElements(MovieData, Movie_Cast) {
   document.getElementById("cast-names-holder").appendChild(div);
 
   //metadata
+  document.getElementById("movie-budget").innerHTML =
+    "Budget: $" + pricetostring(Movie_Metadata.budget);
+
+  document.getElementById("movie-boxoffice").innerHTML =
+    "Box Office: $" + pricetostring(Movie_Metadata.revenue);
+
+  document.getElementById("Release-date").innerHTML =
+    "Release Date: " + MovieData.release_date;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("getmoviebutton").addEventListener("click", () => {
     var moviename = document.getElementById("moviename-input").value;
-
     getdatafromapi(encodeURI(moviename));
   });
 });
-
-// Movie_metadata = await axios.get('https://api.themoviedb.org/3/movie/' + String(MovieDetails.data.results[0].id) + '?api_key=d7dd816b5caceb61abc1a42d5913bb2a&language=en-US')
-//           Movie_Cast = await axios.get('https://api.themoviedb.org/3/movie/' + String(MovieDetails.data.results[0].id) + '/credits?api_key=d7dd816b5caceb61abc1a42d5913bb2a&language=en-US')
