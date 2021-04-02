@@ -62,6 +62,8 @@ function createMovieElements(MovieData, Movie_Cast, Movie_Metadata) {
     "src",
     `https://image.tmdb.org/t/p/original${MovieData.backdrop_path}`
   );
+
+  document.getElementById("movie-backdrop").style.display = "block";
   //description
   var MovieDescriptionElement = document.getElementById("movie-description");
   MovieDescriptionElement.innerHTML = MovieData.overview;
@@ -74,9 +76,10 @@ function createMovieElements(MovieData, Movie_Cast, Movie_Metadata) {
 
     CastList.push(castlistitem);
   }
-  var div = document.createElement("div");
+  var div = document.createElement("ul");
+  div.classList.add("cast-names-holder");
   div.innerHTML = CastList.join("");
-  document.getElementById("cast-names-holder").appendChild(div);
+  document.getElementById("moviecastnames").appendChild(div);
 
   //metadata
   document.getElementById("movie-budget").innerHTML =

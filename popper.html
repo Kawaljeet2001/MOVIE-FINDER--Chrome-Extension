@@ -5,33 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./popper.css" />
     <title>First Chrome Extension</title>
   </head>
   <body>
-    <h1>This is my first chrome extension.</h1>
-    <input type = 'text' placeholder="Enter movie name" id = "moviename-input"></input>
-    <button id = 'getmoviebutton'>Get Movie Data</button>
+    <!-- <h1>This is my first chrome extension.</h1> -->
+    <div class="searchdiv">
+        <input type = 'text' placeholder="Enter movie name" id = "moviename-input"></input>
+    <button id = 'getmoviebutton'><i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></button>
 
+    </div>
+    
     <div class="Movie">
         <h2 id = 'MovieName'></h2>
         <div class="movieimage">
-            <img id = 'movie-backdrop' src = "#" />
+            <img id = 'movie-backdrop' src = "#"/>
         </div>
         <p id = 'movie-description'></p>
         <div class = "metadata">
-            <h5 id = 'Release-date'>Release Year: </h5>
-            <h5 id = 'movie-budget'>Budget: $</h5>
-            <h5 id = 'movie-boxoffice'>Box Office: $</h5>
+            <h5 id = 'Release-date'></h5>
+            <h5 id = 'movie-budget'></h5>
+            <h5 id = 'movie-boxoffice'></h5>
         </div>
-        <div class = "moviecastnames">
+        <div id = "moviecastnames">
             <h4>Cast</h4>
-            <ul id = 'cast-names-holder'>
-                <!-- <li>Sam worthngton</li>
-                <li>Zoe Saldana</li>
-                <li>Michelle Rodriguez</li> -->
-            </ul>
+            <!-- <ul id = 'cast-names-holder'>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+                    <li>Eddie Redmayne</li>
+            </ul> -->
         </div>
     </div>
    <script src="./popper.js"></script>
