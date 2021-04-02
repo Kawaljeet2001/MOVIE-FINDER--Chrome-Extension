@@ -1,0 +1,32 @@
+body {
+  font-family: "Bree Serif", serif;
+}
+.movieimage {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.movieimage img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.Movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.metadata {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.metadata h5 {
+  margin: 3px 10px;
+}
+#movie-description {
+  margin-top: 0;
+}

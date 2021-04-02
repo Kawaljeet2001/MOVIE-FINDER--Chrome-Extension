@@ -1,0 +1,9 @@
+{
+    "name" : "First Chrome Extension",
+    "description" : "This is a simple extension for searching movie details",
+    "version" : "1.0",
+    "manifest_version" : 3,
+    "action" : {
+        "default_popup" : "popper.html"
+    }
+}

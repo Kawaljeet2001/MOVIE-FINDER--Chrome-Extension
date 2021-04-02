@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popper.css" />
+    <title>First Chrome Extension</title>
+  </head>
+  <body>
+    <h1>This is my first chrome extension.</h1>
+    <input type = 'text' placeholder="Enter movie name" id = "moviename-input"></input>
+    <button id = 'getmoviebutton'>Get Movie Data</button>
+
+    <div class="Movie">
+        <h2 id = 'MovieName'></h2>
+        <div class="movieimage">
+            <img id = 'movie-backdrop' src = "#" />
+        </div>
+        <p id = 'movie-description'></p>
+        <div class = "metadata">
+            <h5>Release Year: </h5>
+            <h5>Budget: </h5>
+            <h5>Box Office: </h5>
+        </div>
+        <div class = "moviecastnames">
+            <h4>Cast</h4>
+            <ul id = 'cast-names-holder'>
+                <!-- <li>Sam worthngton</li>
+                <li>Zoe Saldana</li>
+                <li>Michelle Rodriguez</li> -->
+            </ul>
+        </div>
+    </div>
+   <script src="./popper.js"></script>
+  </body>
+</html>
