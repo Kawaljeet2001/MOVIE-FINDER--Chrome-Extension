@@ -80,7 +80,9 @@ function createMovieElements(MovieData, Movie_Cast, Movie_Metadata) {
   div.classList.add("cast-names-holder");
   div.innerHTML = CastList.join("");
   document.getElementById("moviecastnames").appendChild(div);
-
+  document
+    .getElementById("moviecastnames")
+    .style.setProperty("display", "flex");
   //metadata
   document.getElementById("movie-budget").innerHTML =
     "Budget: $" + pricetostring(Movie_Metadata.budget);

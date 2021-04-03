@@ -2,14 +2,7 @@ body {
   font-family: "Bree Serif", serif;
   padding: 0;
   margin: 0;
-}
-
-.searchdiv {
-  display: flex;
-  align-items: center;
   background: #161a1d;
-  height: 80px;
-  justify-content: center;
 }
 
 .searchdiv input {
@@ -88,7 +81,7 @@ body {
 
 #moviecastnames {
   width: 100%;
-  display: flex;
+  display: none;
   padding: 0;
   align-items: flex-start;
   justify-content: center;
@@ -113,4 +106,21 @@ body {
 }
 .cast-names-holder li {
   color: #f5f2f4;
+}
+
+.logoholder {
+  height: 100px;
+  /* overflow: hidden; */
+}
+
+.searchdiv {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.logoholder img {
+  max-height: 100%;
+  max-width: 100%;
 }

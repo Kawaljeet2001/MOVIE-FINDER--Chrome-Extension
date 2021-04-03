@@ -11,13 +11,17 @@
     <title>First Chrome Extension</title>
   </head>
   <body>
-    <!-- <h1>This is my first chrome extension.</h1> -->
-    <div class="searchdiv">
-        <input type = 'text' placeholder="Enter movie name" id = "moviename-input"></input>
-    <button id = 'getmoviebutton'><i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></button>
-
-    </div>
     
+    <div class="searchdiv">
+      <div class="logoholder">
+        <img id = "logo" src = "./logo.png" />
+      </div>
+      <div class="searchdiv-inner">
+        <input type = 'text' placeholder="Enter movie name" id = "moviename-input"></input>
+        <button id = 'getmoviebutton'><i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></button>
+      </div>
+        
+     </div>
     <div class="Movie">
         <h2 id = 'MovieName'></h2>
         <div class="movieimage">
@@ -31,18 +35,6 @@
         </div>
         <div id = "moviecastnames">
             <h4>Cast</h4>
-            <!-- <ul id = 'cast-names-holder'>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-                    <li>Eddie Redmayne</li>
-            </ul> -->
         </div>
     </div>
    <script src="./popper.js"></script>
