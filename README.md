@@ -4,8 +4,9 @@ A Chrome Extension that lets you search about your favourite movies, anywhere, a
 
 ## Prototype Demo
 
-![Movie Finder](./demo_image.png)
 ![Movie Finder](./demo_gif.gif)
+
+![Movie Finder](./demo_image.png)
 
 ## Thought behind this project
 
