@@ -1,7 +1,7 @@
 async function getdatafromapi(moviename) {
   try {
     var res = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=d7dd816b5caceb61abc1a42d5913bb2a&language=en-US&query=${moviename}&page=1&include_adult=false`
+      `https://api.themoviedb.org/3/search/movie?api_key={YOUR-API-KEY}&language=en-US&query=${moviename}&page=1&include_adult=false`
     );
 
     var moviedata = await res.json();
@@ -13,12 +13,12 @@ async function getdatafromapi(moviename) {
       var Movie_Cast_raw = await fetch(
         "https://api.themoviedb.org/3/movie/" +
           String(MovieData.id) +
-          "/credits?api_key=d7dd816b5caceb61abc1a42d5913bb2a&language=en-US"
+          "/credits?api_key={YOUR-API-KEY}&language=en-US"
       );
       Movie_Cast = await Movie_Cast_raw.json();
 
       var Movie_metadata_raw = await fetch(
-        `https://api.themoviedb.org/3/movie/${MovieData.id}?api_key=d7dd816b5caceb61abc1a42d5913bb2a&language=en-US`
+        `https://api.themoviedb.org/3/movie/${MovieData.id}?api_key={YOUR-API-KEY}&language=en-US`
       );
       Movie_Metadata = await Movie_metadata_raw.json();
     }

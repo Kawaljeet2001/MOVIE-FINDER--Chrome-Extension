@@ -5,11 +5,11 @@ A Chrome Extension that lets you search about your favourite movies, anywhere, a
 ## Prototype Demo
 
 ![Movie Finder](./demo_image.png)
-![Movie Finder](./demo_video.mp4)
+![Movie Finder](./demo_gif.gif)
 
 ## Thought behind this project
 
-This project is intended for learning hoe to create a chrome extension from scratch. Understanding the use of manifest.json, how to use API's or serverless functions to fetch data and how to simply incorporate these facilities in a chrome extension is the aim of this projct. The complete tutorial on _Creating Your First Chrome Extension_ can be found [Medium Article](http://google.com "here").
+This project is intended for learning hoe to create a chrome extension from scratch. Understanding the use of manifest.json, how to use API's or serverless functions to fetch data and how to simply incorporate these facilities in a chrome extension is the aim of this projct. The complete tutorial on _Creating Your First Chrome Extension_ can be found [here](http://google.com "Tutorial").
 
 ## How to setup locally?
 
@@ -24,4 +24,4 @@ For setting up the project on a local machine
 
 The extension should now be visible in the console. Click on the icon to use it.
 
-### For full tutorial on how to create your first chrome extension, visit [Medium Article](http://google.com "here").
+### For full tutorial on how to create your first chrome extension, visit [Tutorial](http://google.com "here").
