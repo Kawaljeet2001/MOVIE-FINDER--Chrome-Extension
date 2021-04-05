@@ -1,8 +1,11 @@
 {
-    "name" : "First Chrome Extension",
-    "description" : "This is a simple extension for searching movie details",
+    "name" : "Movie Finder",
+    "description" : "Extension for searching movie details, right within your browser.",
     "version" : "1.0",
     "manifest_version" : 3,
+    "icons": { "16": "icon.png",
+        "48": "icon.png",
+       "128": "icon.png" },
     "action" : {
         "default_popup" : "popper.html",
         "default_icon" : "icon.png"
