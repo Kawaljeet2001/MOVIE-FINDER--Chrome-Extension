@@ -10,7 +10,7 @@ A Chrome Extension that lets you search about your favourite movies, anywhere, a
 
 ## Thought behind this project
 
-This project is intended for learning hoe to create a chrome extension from scratch. Understanding the use of manifest.json, how to use API's or serverless functions to fetch data and how to simply incorporate these facilities in a chrome extension is the aim of this projct. The complete tutorial on _Creating Your First Chrome Extension_ can be found [here](https://batrakawaljeetsingh.medium.com/creating-your-first-chrome-extension-17d3ad3c7d5 "Tutorial").
+This project is intended for learning to create a chrome extension from scratch. Understanding the use of manifest.json, how to use API's or serverless functions to fetch data and how to simply incorporate these facilities in a chrome extension is the aim of this projct. The complete tutorial on _Creating Your First Chrome Extension_ can be found [here](https://batrakawaljeetsingh.medium.com/creating-your-first-chrome-extension-17d3ad3c7d5 "Tutorial").
 
 ## How to setup locally?
 
